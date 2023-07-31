@@ -2,11 +2,10 @@ body {
   background-color: rgba(126, 124, 213, 1);
   max-height: fit-content;
   overflow: hidden;
-  
 }
 
-.navigation{
-    margin: 0;
+.navigation {
+  margin: 0;
 }
 
 .container {
@@ -46,9 +45,6 @@ body {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .item-4 {
@@ -80,7 +76,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   /* For screen widths up to 768px */
-  body{
+  body {
     max-height: fit-content;
     max-width: 600px;
     overflow: hidden;
@@ -96,30 +92,29 @@ ul {
     grid-area: 1/1/2/2;
   }
 
-  h1{
+  h1 {
     align-items: center;
     text-align: center;
   }
 
-.item-4{
-grid-area: 2/1/3/2;
-text-align: center;
-}
+  .item-4 {
+    grid-area: 2/1/3/2;
+    text-align: center;
+  }
 
-.item-2{
+  .item-2 {
     grid-area: 3/1/4/2;
-}
+  }
 
-.item-3{
+  .item-3 {
     grid-area: 4/1/5/2;
     margin: 0;
     max-width: 500px;
-}
+  }
 
-p{
+  p {
     text-align: center;
-}
-
+  }
 }
 
 /* Add more media queries as needed for other screen sizes */
@@ -127,7 +122,7 @@ p{
 @media screen and (max-width: 576px) {
   /* For screen widths up to 576px */
 
-  body{
+  body {
     max-height: fit-content;
     max-width: 500px;
     overflow: hidden;
@@ -139,36 +134,85 @@ p{
     gap: 2rem;
   }
 
-
   .item-1 {
     grid-area: 1/1/2/2;
   }
 
-  h1{
+  h1 {
     align-items: center;
     text-align: center;
   }
 
-.item-4{
-grid-area: 2/1/3/2;
-text-align: center;
-}
+  .item-4 {
+    grid-area: 2/1/3/2;
+    text-align: center;
+  }
 
-.item-2{
+  .item-2 {
     grid-area: 3/1/4/2;
-}
+  }
 
-.item-3{
+  .item-3 {
     grid-area: 4/1/5/2;
     margin: 0;
     max-width: 350px;
     text-align: center;
-}
+  }
 
-p{
+  p {
+    color: #000;
     text-align: center;
-    max-width: 350px;
-
+    font-family: Doppio One;
+    font-size: 1.3125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 500px; /* Adjust the max-width as needed for different screen sizes */
+    margin: 0 auto;
+  }
 }
 
-}
+/* ... Previous CSS code ... */
+
+@media screen and (max-width: 393px) {
+    /* For screen widths up to 393px */
+  
+    body {
+      max-height: fit-content;
+      max-width: 393px;
+      overflow: hidden;
+    }
+  
+    .container {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr; /* Use 1fr to let it take available width */
+      gap: 2rem;
+      padding: 0 1rem; /* Add padding to avoid horizontal overflow */
+    }
+  
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+    h1 {
+      align-items: center;
+      text-align: center;
+    }
+  
+    p {
+      color: #000;
+      text-align: center;
+      font-family: Doppio One;
+      font-size: 1.3125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      max-width: 100%; /* Adjust the max-width to fit the available width */
+      margin: 0 auto;
+    }
+  }
+  
