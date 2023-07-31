@@ -72,7 +72,7 @@ ul {
   /* For screen widths up to 768px */
   body{
     max-height: fit-content;
-    max-width: fit-content;
+    max-width: 600px;
     overflow: hidden;
   }
 
@@ -118,7 +118,7 @@ p{
 
   body{
     max-height: fit-content;
-    max-width: fit-content;
+    max-width: 500px;
     overflow: hidden;
   }
 
