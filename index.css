@@ -154,9 +154,7 @@ ul {
 
   .item-3 {
     grid-area: 4/1/5/2;
-    margin: 0;
     max-width: 350px;
-    text-align: center;
   }
 
   p {
@@ -174,45 +172,16 @@ ul {
 
 /* ... Previous CSS code ... */
 
-@media screen and (max-width: 393px) {
-    /* For screen widths up to 393px */
-  
-    body {
-      max-height: fit-content;
-      max-width: 393px;
-      overflow: hidden;
-    }
-  
-    .container {
-      grid-template-rows: auto;
-      grid-template-columns: 1fr; /* Use 1fr to let it take available width */
-      gap: 2rem;
-      padding: 0 1rem; /* Add padding to avoid horizontal overflow */
-    }
-  
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
-  
-    h1 {
-      align-items: center;
-      text-align: center;
-    }
-  
+@media screen and (max-width: 500px) {
     p {
-      color: #000;
       text-align: center;
-      font-family: Doppio One;
-      font-size: 1.3125rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      max-width: 100%; /* Adjust the max-width to fit the available width */
       margin: 0 auto;
     }
+
+.item-3{
+    margin-left: auto;
+    margin-right: auto;
+}
+
   }
   
