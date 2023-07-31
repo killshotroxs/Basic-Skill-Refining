@@ -173,9 +173,11 @@ ul {
 /* ... Previous CSS code ... */
 
 @media screen and (max-width: 500px) {
+    
     p {
       text-align: center;
       margin: 0 auto;
+      font-weight: 600;
     }
 
 .item-3{
