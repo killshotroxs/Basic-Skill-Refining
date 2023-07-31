@@ -163,6 +163,8 @@ text-align: center;
     margin: 0;
     max-width: 350px;
     text-align: center;
+    justify-content: center;
+    align-self: center;
 }
 
 p{
