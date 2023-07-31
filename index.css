@@ -1,6 +1,8 @@
 body {
   background-color: rgba(126, 124, 213, 1);
   max-height: fit-content;
+  overflow: hidden;
+  
 }
 
 .container {
@@ -8,7 +10,7 @@ body {
   grid-template-rows: 3rem 2rem 14rem 25rem;
   grid-template-columns: 2fr;
   gap: 5rem;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .item-1 {
@@ -68,6 +70,11 @@ ul {
 
 @media screen and (max-width: 768px) {
   /* For screen widths up to 768px */
+  body{
+    max-height: fit-content;
+    max-width: fit-content;
+  }
+
   .container {
     grid-template-rows: auto;
     grid-template-columns: 600px;
