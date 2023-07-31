@@ -71,13 +71,14 @@ ul {
 @media screen and (max-width: 768px) {
   /* For screen widths up to 768px */
   body{
-    max-width: 300px;
+    max-height: fit-content;
+    max-width: 600px;
     overflow: hidden;
   }
 
   .container {
     grid-template-rows: auto;
-    grid-template-columns: 300px;
+    grid-template-columns: 600px;
     gap: 2rem;
   }
 
@@ -116,13 +117,14 @@ p{
   /* For screen widths up to 576px */
 
   body{
-    max-width: 300px;
+    max-height: fit-content;
+    max-width: 500px;
     overflow: hidden;
   }
 
   .container {
     grid-template-rows: auto;
-    grid-template-columns: 300px;
+    grid-template-columns: 600px;
     gap: 2rem;
   }
 
