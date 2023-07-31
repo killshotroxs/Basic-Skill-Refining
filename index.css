@@ -73,6 +73,7 @@ ul {
   body{
     max-height: fit-content;
     max-width: fit-content;
+    overflow: hidden;
   }
 
   .container {
@@ -114,11 +115,19 @@ p{
 
 @media screen and (max-width: 576px) {
   /* For screen widths up to 576px */
+
+  body{
+    max-height: fit-content;
+    max-width: fit-content;
+    overflow: hidden;
+  }
+
   .container {
     grid-template-rows: auto;
     grid-template-columns: 600px;
     gap: 2rem;
   }
+
 
   .item-1 {
     grid-area: 1/1/2/2;
