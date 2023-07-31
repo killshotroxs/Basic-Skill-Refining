@@ -161,11 +161,14 @@ text-align: center;
 .item-3{
     grid-area: 4/1/5/2;
     margin: 0;
-    max-width: 500px;
+    max-width: 350px;
+    text-align: center;
 }
 
 p{
     text-align: center;
+    max-width: 350px;
+
 }
 
 }
