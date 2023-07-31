@@ -5,6 +5,10 @@ body {
   
 }
 
+.navigation{
+    margin: 0;
+}
+
 .container {
   display: grid;
   grid-template-rows: 3rem 2rem 14rem 25rem;
@@ -42,6 +46,9 @@ body {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-4 {
@@ -66,6 +73,9 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,6 +113,7 @@ text-align: center;
 .item-3{
     grid-area: 4/1/5/2;
     margin: 0;
+    max-width: 500px;
 }
 
 p{
@@ -150,6 +161,7 @@ text-align: center;
 .item-3{
     grid-area: 4/1/5/2;
     margin: 0;
+    max-width: 500px;
 }
 
 p{
